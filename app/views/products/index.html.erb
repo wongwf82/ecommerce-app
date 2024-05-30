@@ -1,9 +1,19 @@
+<h1>Products</h1>
+
 <%= form_with url: products_path, method: :get, local: true do |form| %>
   <%= form.label :query, "Search Products" %>
   <%= form.text_field :query %>
   <%= form.submit "Search" %>
 <% end %>
 
-<% @products.each do |product| %>
-  <p><%= link_to product.name, product_path(product) %></p>
-<% end %>
+<ul>
+  <% @products.each do |product| %>
+    <li>
+      <%= link_to product.name, product_path(product) %>
+      <br>
+      Description: <%= product.description %>
+      <br>
+      Price: <%= number_to_currency(product.price) %>
+    </li>
+  <% end %>
+</ul>
