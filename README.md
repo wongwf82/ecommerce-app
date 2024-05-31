@@ -1,10 +1,10 @@
-# E-Commerce Application README
+# E-Commerce Application
 
 This is a simple e-commerce application built with Ruby on Rails. It includes features such as product listing, user authentication, and full-text search capabilities.
 
 ## Overview
 
-This guide will walk you through setting up and running a Ruby on Rails application locally. We'll cover installation, database setup, running the server, testing, and common usage scenarios.
+This guide will walk you through setting up and running a Ruby on Rails application locally. We'll cover installation, database setup, running the server and testing.
 
 ### Requirements
 
@@ -20,11 +20,7 @@ Before getting started, ensure you have the following installed:
 
 Follow these steps to set up the application locally:
 
-   ```bash
-   git clone https://github.com/yourusername/e-commerce-app.git
-   ```
-
-1. Git clone and Navigate to the Application Directory.
+1. Git clone and navigate to the Application Directory.
 
 2. Install Dependencies:
 
@@ -62,16 +58,17 @@ To run tests, use the following command:
 
 ## Usage
 
-### Product Listing
-
-- Navigate to the home page to view a list of available products.
-- Click on a product to view its details.
 
 ### User Authentication
 
-- Click on the "Login" link in the navigation bar to access the login page.
-- Enter your credentials to log in.
+- Enter your credentials to log in
+- You will be redirected to the Products page
+
+### Product Listing
+
+- Navigate to http://localhost:3000/products
+- Click on a product to view its details
 
 ### Full-Text Search
 
-- Use the search bar on the home page to search for products by name or description.
+- Use the search bar to search for products by name or description
