@@ -1,24 +1,40 @@
-# README
+# E-Commerce Application README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple e-commerce application built with Ruby on Rails. It includes features such as product listing, user authentication, and full-text search capabilities.
 
-Things you may want to cover:
+## Overview
 
-* Ruby version
+This guide will walk you through setting up and running a Ruby on Rails application locally. We'll cover installation, database setup, running the server, testing, and common usage scenarios.
 
-* System dependencies
+### Requirements
 
-* Configuration
+Before getting started, ensure you have the following installed:
 
-* Database creation
+- Ruby
+- RubyGems
+- Bundler
+- Rails
+- Database (e.g., SQLite, PostgreSQL, MySQL)
 
-* Database initialization
+## Installation
 
-* How to run the test suite
+Follow these steps to set up the application:
 
-* Services (job queues, cache servers, search engines, etc.)
+1. **Clone the Repository**:
 
-* Deployment instructions
+   ```bash
+   git clone https://github.com/yourusername/your-rails-app.git
 
-* ...
+
+## Installation
+
+Follow these steps to set up the application locally:
+
+1. **Clone the Repository**: 
+
+   ```bash
+   git clone https://github.com/yourusername/e-commerce-app.git
+
+2. Navigate to the Application Directory:
+
+cd your-rails-app
