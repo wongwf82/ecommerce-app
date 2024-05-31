@@ -1,13 +1,11 @@
 require "test_helper"
 
 class ProductsControllerTest < ActionDispatch::IntegrationTest
-  test "should get index" do
-    get products_index_url
-    assert_response :success
-  end
+  test "should redirect to login page" do
+    get products_url
+    assert_response :redirect
 
-  test "should get show" do
-    get products_show_url
+    get login_url
     assert_response :success
   end
 end
