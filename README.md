@@ -18,23 +18,60 @@ Before getting started, ensure you have the following installed:
 
 ## Installation
 
-Follow these steps to set up the application:
-
-1. **Clone the Repository**:
-
-   ```bash
-   git clone https://github.com/yourusername/your-rails-app.git
-
-
-## Installation
-
 Follow these steps to set up the application locally:
-
-1. **Clone the Repository**: 
 
    ```bash
    git clone https://github.com/yourusername/e-commerce-app.git
+   ```
 
-2. Navigate to the Application Directory:
+1. Git clone and Navigate to the Application Directory.
 
-cd your-rails-app
+2. Install Dependencies:
+
+   ```bash
+   bundle 
+   ```
+
+3. Set Up the Database:
+
+   ```bash
+   rails db:create
+   rails db:migrate
+   rails db:seed
+   ```
+
+This will create the database, run migrations, and seed the database with sample data.
+
+## Running the Application
+
+To start the Rails server, run:
+
+   ```bash
+   rails server
+   ```
+
+You can then access the application in your web browser at http://localhost:3000.
+
+## Testing
+
+To run tests, use the following command:
+
+   ```bash
+   rails test
+   ```
+
+## Usage
+
+### Product Listing
+
+- Navigate to the home page to view a list of available products.
+- Click on a product to view its details.
+
+### User Authentication
+
+- Click on the "Login" link in the navigation bar to access the login page.
+- Enter your credentials to log in.
+
+### Full-Text Search
+
+- Use the search bar on the home page to search for products by name or description.
