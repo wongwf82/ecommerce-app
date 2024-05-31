@@ -43,3 +43,17 @@ jobs:
     - name: Run tests
       run: |
         RAILS_ENV=test bundle exec rails test
+        
+    - name: Deploy to Heroku
+      env:
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      run: |
+        git reset --hard
+        git config --global user.email "wongwf82@gmail.com"
+        git config --global user.name "Fai Wong"
+        git config pull.rebase true
+        git config rebase.autoSquash true
+        git config rebase.instructionFormat '%an <%ae> %s'
+        git pull --rebase --strategy-option=theirs https://heroku:$HEROKU_API_KEY@git.heroku.com/my-ecommerce-app.git main
+        git pull --rebase https://heroku:$HEROKU_API_KEY@git.heroku.com/my-ecommerce-app.git main
+        git push https://heroku:$HEROKU_API_KEY@git.heroku.com/my-ecommerce-app.git main
